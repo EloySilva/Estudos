@@ -1,9 +1,9 @@
 Quando("eu tento efetuar um login no site centauro.") do
   visit '/slogin'
 
-  fill_in(id: 'input-type-1', with: 'eloy.testesbnet@gmail.com')
+  fill_in(id: 'input-type-1', with: '**')
   find('input[id="optYesclient"]').click
-  fill_in(id: 'input-type-4', with: '123456')
+  fill_in(id: 'input-type-4', with: '*')
   find('input[id="btn_Entrar"]').click
 end
 
